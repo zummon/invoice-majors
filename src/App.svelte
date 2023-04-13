@@ -98,7 +98,7 @@
 </script>
 
 <div class="flex flex-wrap justify-center items-center my-4 print:hidden">
-{#each Object.keys(data) as lng, i (`lang-${i}`)}
+	{#each Object.keys(data) as lng, i (`lang-${i}`)}
 		<button class="block duration-300 px-4 py-2 shadow-xl {q.lang === lng ? "bg-purple-600 text-white" : "text-gray-900 bg-white hover:bg-purple-600 focus:bg-purple-600 hover:text-white focus:text-white"}" on:click={() => {
 			q.lang = lng
 			}}>
