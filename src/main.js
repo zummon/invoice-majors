@@ -134,7 +134,7 @@ let data = {
 };
 
 const app = new App({
-  target: document.getElementById("_app"),
+  target: document.getElementById("app"),
   props: { data },
 });
 
